@@ -69,20 +69,21 @@ class Juego{
 	
 	private://Atributos
 	string preguntas;
-	string anecdotas[10];
+
 	
 	public://metodos
-	Juego(string,string);//constructor
+	Juego(string);//constructor
 	void preguntas_responder(Usuario&);
 	void historia(); 
-	
+	string anecdotas[10];
 	
 };
 //Se·inicializa·el·costructor·
-Juego::Juego(string _preguntas,string _anecdotas){
+Juego::Juego(string _preguntas){
 	
 	preguntas=_preguntas;
-		
+	
+	
 }
 /**
 ·*·@brief Se·inicializa·el·metodo·preguntas_responder·para·ingresar·las·preguntas·y·respuestas·
@@ -449,7 +450,7 @@ int main(){
 		jugador1.nombre_usuario();
 		
 		
-		Juego j1=Juego("Prenguntas","ANECDOTAS" );
+		Juego j1=Juego("Prenguntas");
 		jugador1.getPuntaje();
 		j1.preguntas_responder(jugador1);
 		
@@ -466,7 +467,7 @@ int main(){
 		Usuario jugador1= Usuario("Jugador1",0);//Objectos para el jugador 1
 		jugador1.nombre_usuario();
 		
-		Juego j1=Juego("Prenguntas","ANECDOTAS" );//Objectos preguntas y anecdotas
+		Juego j1=Juego("Prenguntas" );//Objectos preguntas y anecdotas
 		jugador1.getPuntaje();
 		j1.preguntas_responder(jugador1);
 			
@@ -475,7 +476,7 @@ int main(){
 		jugador2.nombre_usuario();
 		
 		
-		Juego juego2=Juego("Prenguntas","ANECDOTAS" );//Objectos preguntas y anecdotas para el jugador 2
+		Juego juego2=Juego("Prenguntas" );//Objectos preguntas y anecdotas para el jugador 2
 		cout<<"Mr Soccer, Ahora esturno del jugador 2"<<endl;
 		juego2.preguntas_responder(jugador2);
 			
@@ -498,6 +499,7 @@ int main(){
 		cout<<"Empate,bien jugado"<<endl;
 		
 	}}
+	system("pause");
 	
 	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*
 	
