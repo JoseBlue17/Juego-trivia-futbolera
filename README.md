@@ -1,4 +1,4 @@
-# Juego Trivia Futbolera
+# Trivia Futbolera
 Trivia futbolera es un juego de preguntas en donde pondra a prueba tus conocimientos futbolisticos, claro no se necesita ser experto en el tema todos pueden disfrutar del juego
 y te divertiras con la mascota Mr soccer, que esperas para jugarlo?
 
@@ -10,8 +10,5 @@ y te divertiras con la mascota Mr soccer, que esperas para jugarlo?
 
 ## Donde Jugarlo
 
-- Descarga y instala el programa Dev-C++, te dejare el siguiente link para que lo puedas descargar: https://bloodshed.net/
-- Cuando termines hacer lo anterior te puedes dirigir al repositorio llamado Juego-trvia-futbolera.
-- Selecciona la carpeta Juego y el ejecutable Borrador_juego saldra un recuadro tipo cmd. Ahora puedes disfrutar del juego con tus familiares y amigos.
-- Puedes utilizar tambien el programa Visual Studio Code configurado previamente con sus extensiones de c++ para que puedas ejecutar el juego.
+- Puedes utilizar estos compiladres de c++ para ejecutar el juego gcc, cl, clang.
 - El juego funciona para windows, linux etc.
