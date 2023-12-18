@@ -218,7 +218,7 @@ void Juego::preguntas_responder(Usuario &jugador){
 	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*
 	
 	posicion++;//Pregunta#5
-	cout<<"Pregunta#"<<posicion<<"---DIFICIL---"<<"Vale X2"<<endl;;
+	cout<<"Pregunta#"<<posicion<<"---DIFICIL---"<<"Vale X2"<<endl;
 	cout<<"Quien fue el subcampeon de la UEFA Europa League del 2013"<<endl;
 	cout<<"A.Sevilla"<<endl<<"B.Juventus"<<endl<<"C.Benfica"<<endl<<"D.Valenica"<<endl;
 	cout<<"Responde correctamente:"<<endl;
@@ -275,7 +275,7 @@ void Juego::preguntas_responder(Usuario &jugador){
 	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*
 	
 	posicion++;//Pregunta#7
-	cout<<"Pregunta#"<<posicion<<endl;
+	cout<<"Pregunta#"<<posicion<<"---DIFICIL---"<<"Vale X2"<<endl;
 	cout<<"Quien fue el maximo goleador de la Eurocopa del 2012"<<endl;
 	cout<<"A.Mario Balotelli"<<endl<<"B.Cristiano Ronaldo"<<endl<<"C.Dinatale"<<endl<<"D.Fernando Torres"<<endl;
 	cout<<"Responde correctamente:"<<endl;
@@ -456,7 +456,7 @@ int main(){
 		
 		cout<<"\n";
 		cout << "Puntaje total: "<< jugador1.getPuntaje()<< endl;
-		system("pause");
+		
 				
 	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*	
 
@@ -522,7 +522,7 @@ int main(){
     }
     }while(respuesta == 'S' || respuesta == 's');
 
-	getch();	
+		
 	return 0;
 }
 
@@ -545,7 +545,7 @@ void final(){
 	cout <<"Creditos"<<endl;
 	cout<<"Creador: Jose Miguel Ramirez"<<endl<<endl;
 	cout<<"Anecdota: Gracias por disfutar del juego que he hecho es el primero que hago y me diverti mucho en este proyecto, sigan aprendiendo de este lindo mundo de la programacion ."<<endl;
-	cout<<"-Y no olviden que el mejor jugador del mundo es Messi"<<endl<<endl<<"Mr soccer: Te equivocas es el bicho siuuuuu."<<endl;
+	cout<<"-Y no olviden que el mejor jugador del mundo es Messi"<<endl<<endl<<"Mr soccer: Te equivocas es el bicho(CR7) siuuuuu."<<endl;
 }	
 
 
