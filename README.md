@@ -10,5 +10,5 @@ y te divertiras con la mascota Mr soccer, que esperas para jugarlo?
 
 ## Donde Jugarlo
 
-- Puedes utilizar estos compiladres de c++ para ejecutar el juego gcc,cl,clang.
+- Puedes utilizar estos compiladres de c++ para ejecutar el juego gcc, cl, clang.
 - El juego funciona para windows, linux etc.
