@@ -105,7 +105,7 @@ void Juego::preguntas_responder(Usuario &jugador){
 	cin>>Respuesta1;
 	
 	if(Respuesta1=='a'||Respuesta1=='A'){
-		cout<<"Respuesta Correcta"<<endl;
+		cout<<"Respuesta Correcta =D "<<endl;
 
 	
         
@@ -113,13 +113,13 @@ void Juego::preguntas_responder(Usuario &jugador){
         cout << "\n";
         jugador.puntajes(100); // Incrementa·el·puntaje·si·es·correcta·
     	 cout << "Puntaje actual: " << jugador.getPuntaje() << endl<< "\n";;//Muestra·el·puntaje·actual·del·jugador·
-		cout << "Anecdota relacionada" << endl;
+		cout << "#----Anecdota relacionada----#" <<endl<<endl;
 		cout<<anecdotas[0]<<endl;//Se·llama·el·arreglo·de·anecdotas·para·que·muestre·la·anecdota·correspondiente·
 		cout << "\n"; 
 	}
 	else{
 		historia();
-		cout<<"Respuesta incorrecta. Es la opcion A"<<endl;
+		cout<<"Respuesta incorrecta (;_;) .Es la opcion A"<<endl;
 		cout<<"\n";
 		cout<<anecdotas[0]<<endl;
 		cout<<"\n";
@@ -140,20 +140,20 @@ void Juego::preguntas_responder(Usuario &jugador){
 	
 		
 	if(Respuesta2=='c'||Respuesta2=='C'){
-		cout<<"Respuesta Correcta"<<endl;
+		cout<<"Respuesta Correcta =D "<<endl;
 		
 		cout<<"\n";
 		 jugador.puntajes(100);// Incrementa·el·puntaje·si·es·correcta·
 		 cout << "Puntaje actual: " << jugador.getPuntaje() << endl<<"\n";;
 		 
 		historia();// Muestra·la·anecdota·correspondiente·
-		 cout << "Anecdota relacionada" << endl;
+		 cout << "#----Anecdota relacionada----#" << endl<<endl;
 		 cout<<anecdotas[1]<<endl<< "\n";;//Se·llama·el·arreglo·de·anecdotas·para·que·muestre·la·anecdota·correspondiente·
 	}
 	
 	else{
 		historia();
-		cout<<"Respuesta incorrecta. Es la opcion C"<<endl<<"\n";;
+		cout<<"Respuesta incorrecta (;_;). Es la opcion C"<<endl<<"\n";;
 		cout<<anecdotas[1]<<endl<<"\n";;
 	}
 	system("pause");
@@ -170,17 +170,17 @@ void Juego::preguntas_responder(Usuario &jugador){
 	cin>>Respuesta3;
 	
 	if(Respuesta3=='c'||Respuesta3=='C'){
-		cout<<"Respuesta Correcta"<<endl<<"\n";;
+		cout<<"Respuesta Correcta =D"<<endl<<"\n";;
 		historia();
 		 jugador.puntajes(100);
 		 cout << "Puntaje actual: " << jugador.getPuntaje() << endl<<"\n";;
-		 cout << "Anecdota relacionada" << endl;
+		 cout <<"#----Anecdota relacionada----#"<< endl;
 		 cout<<anecdotas[2]<<endl<<"\n";
 			
 	}
 	else{
 		historia();
-		cout<<"Respuesta incorrecta. Es la opcion C"<<endl<<"\n";;
+		cout<<"Respuesta incorrecta (;_;).Es la opcion C"<<endl<<"\n";;
 		cout<<anecdotas[2]<<endl<<"\n";;
 	}
 	system("pause");
@@ -197,18 +197,18 @@ void Juego::preguntas_responder(Usuario &jugador){
 	cin>>Respuesta4;
 	
 		if(Respuesta4=='d'||Respuesta4=='D'){
-		cout<<"Respuesta Correcta"<<endl<<"\n";
+		cout<<"Respuesta Correcta =D"<<endl<<"\n";
 		historia();
 		
 		jugador.puntajes(100);
 		cout << "Puntaje actual: " << jugador.getPuntaje() <<endl<<"\n";
-		cout << "Anecdota relacionada" << endl;
+		cout << "#----Anecdota relacionada----# "<< endl;
 		cout<<anecdotas[3]<<endl<<"\n";
 		  
 	}
 	else{
 		historia();
-		cout<<"Respuesta incorrecta. Es la opcion D"<<endl<<"\n";
+		cout<<"Respuesta incorrecta (;_;).Es la opcion D"<<endl<<"\n";
 		cout<<anecdotas[3]<<endl<<"\n";
 		
 	}
@@ -226,18 +226,18 @@ void Juego::preguntas_responder(Usuario &jugador){
 	cin>>Respuesta5;
 	
 		if(Respuesta5=='c'||Respuesta5=='C'){
-		cout<<"Respuesta Correcta"<<endl<<"\n";
+		cout<<"Respuesta Correcta =D"<<endl<<"\n";
 		 
 		historia();
 		 jugador.puntajes(200);
-		 cout << "Anecdota relacionada" <<endl<<"\n";
+		 cout << "#----Anecdota relacionada----# " <<endl<<"\n";
 		 cout<<anecdotas[4]<<endl<<"\n";
 		 cout << "Puntaje actual: " << jugador.getPuntaje() << endl<<"\n";
 		 
 	}
 	else{
 		historia();
-		cout<<"Respuesta incorrecta. Es la opcion C"<<endl<<"\n";
+		cout<<"Respuesta incorrecta (;_;). Es la opcion C"<<endl<<"\n";
 		cout<<anecdotas[4]<<endl<<"\n";
 				
 	}
@@ -255,18 +255,18 @@ void Juego::preguntas_responder(Usuario &jugador){
 	cin>>Respuesta6;
 	
 	if(Respuesta6=='b'||Respuesta6=='B'){
-		cout<<"Respuesta Correcta"<<endl<<"\n";
+		cout<<"Respuesta Correcta =D"<<endl<<"\n";
 		 
 		historia();
 		 jugador.puntajes(100);
 		 cout << "Puntaje actual: " << jugador.getPuntaje() << endl<<"\n";
-		 cout << "Anecdota relacionada" << endl;
+		 cout << "#----Anecdota relacionada----# " << endl;
 		 cout<<anecdotas[5]<<endl<<"\n";
 		  
 	}
 	else{
 		historia();
-		cout<<"Respuesta incorrecta. Es la opcion B"<<endl<<"\n";
+		cout<<"Respuesta incorrecta (;_;). Es la opcion B"<<endl<<"\n";
 		cout<<anecdotas[5]<<endl<<"\n";
 	}
 	system("pause");
@@ -283,17 +283,17 @@ void Juego::preguntas_responder(Usuario &jugador){
 	cin>>Respuesta7;
 	
 	if(Respuesta7=='d'||Respuesta7=='D'){
-		cout<<"Respuesta Correcta"<<endl<<"\n";
+		cout<<"Respuesta Correcta =D"<<endl<<"\n";
 		historia();
 		 jugador.puntajes(100);
 		 cout << "Puntaje actual: " << jugador.getPuntaje() << endl<<"\n";
-		 cout << "Anecdota relacionada" << endl;
+		 cout << "#----Anecdota relacionada----# " << endl;
 		 cout<<anecdotas[6]<<endl<<"\n";
 		  
 	}
 	else{
 		historia();
-		cout<<"Respuesta incorrecta. Es la opcion D"<<endl<<"\n";
+		cout<<"Respuesta incorrecta (;_;). Es la opcion D"<<endl<<"\n";
 		cout<<anecdotas[6]<<endl<<"\n";
 	}
 	system("pause");
@@ -310,16 +310,16 @@ void Juego::preguntas_responder(Usuario &jugador){
 	cin>>Respuesta8;
 	
 	if(Respuesta8=='b'||Respuesta8=='B'){
-		cout<<"Respuesta Correcta"<<endl<<"\n";
+		cout<<"Respuesta Correcta =D"<<endl<<"\n";
 		historia();
 		 jugador.puntajes(200);
 		cout << "Puntaje actual: " << jugador.getPuntaje() << endl<<"\n";
-		 cout << "Anecdota relacionada" << endl;
+		 cout << "#----Anecdota relacionada----# " << endl;
 		 cout<<anecdotas[7]<<endl<<"\n";
 	}
 	else{
 		historia();
-		cout<<"Respuesta incorrecta. Es la opcion B"<<endl<<"\n";
+		cout<<"Respuesta incorrecta (;_;).Es la opcion B"<<endl<<"\n";
 		cout<<anecdotas[7]<<endl<<"\n";
 		
 	}
@@ -337,16 +337,16 @@ void Juego::preguntas_responder(Usuario &jugador){
 	cin>>Respuesta9;
 	
 		if(Respuesta9=='c'||Respuesta9=='C'){
-		cout<<"Respuesta Correcta"<<endl<<"\n";
+		cout<<"Respuesta Correcta =D"<<endl<<"\n";
 		historia();
 		 jugador.puntajes(100);
 		cout << "Puntaje actual: " << jugador.getPuntaje() << endl<<"\n";
-		cout << "Anecdota relacionada" << endl;
+		cout << "#----Anecdota relacionada----# " << endl;
 		cout<<anecdotas[8]<<endl<<"\n";
 	}
 	else{
 		historia();
-		cout<<"Respuesta incorrecta. Es la opcion C"<<endl<<"\n";
+		cout<<"Respuesta incorrecta (;_;).Es la opcion C"<<endl<<"\n";
 		cout<<anecdotas[8]<<endl<<"\n";
 		
 	}
@@ -364,16 +364,16 @@ void Juego::preguntas_responder(Usuario &jugador){
 	cin>>Respuesta10;
 	
 		if(Respuesta10=='b'||Respuesta10=='B'){
-		cout<<"Respuesta Correcta"<<endl<<"\n";
+		cout<<"Respuesta Correcta =D"<<endl<<"\n";
 		historia();
 		jugador.puntajes(100);
 		cout << "Puntaje actual: " << jugador.getPuntaje() <<endl<<"\n";
-		cout << "Anecdota relacionada" << endl;
+		cout << "#----Anecdota relacionada----# " << endl;
 		cout<<anecdotas[9]<<endl<<"\n";
 	}
 	else{
 		historia();
-		cout<<"Respuesta incorrecta. Es la opcion B"<<endl;
+		cout<<"Respuesta incorrecta (;_;).Es la opcion B"<<endl;
 		cout<<anecdotas[9]<<endl<<"\n";
 	}
 		
@@ -389,25 +389,25 @@ void Juego::historia(){//HISTORIA O ANECDOTAS
 
 	
 	
-	anecdotas[0]="MR soceer:El Boca Junior fue el campeon de aquella edicion de la libertadores contra cruz azul que llego sorprendiendo al mundo entero tras derrotar a River y Rosario central. \nEl partido de ida se jugo en Mexico quedando el marcador 1 a 0 a favor de boca juniors.El cuadro mexicano se jugaba la vida en el partido de vuelta en un estadio muy dificil como la Bombonera, el resultado quedo igualado 1 a 1 y el partido se resolvio en penales, boca acerto 3 y 1 cruz azul dando como consecuencia la consagracion del cuadro xeneize.";
+	anecdotas[0]=">> MR soceer:El Boca Junior fue el campeon de aquella edicion de la libertadores contra cruz azul que llego sorprendiendo al mundo entero tras derrotar a River y Rosario central. \nEl partido de ida se jugo en Mexico quedando el marcador 1 a 0 a favor de boca juniors.El cuadro mexicano se jugaba la vida en el partido de vuelta en un estadio muy dificil como la Bombonera, el resultado quedo igualado 1 a 1 y el partido se resolvio en penales, boca acerto 3 y 1 cruz azul dando como consecuencia la consagracion del cuadro xeneize.";
 
-	anecdotas[1]="MR soceer: La final de la champions del 2005 se jugo en Estambul donde saldria campeon el Liverpool con un marcador de 3-2 frente al Milan en una final apasionante que muchos no olvidan.";
+	anecdotas[1]=">> MR soceer: La final de la champions del 2005 se jugo en Estambul donde saldria campeon el Liverpool con un marcador de 3-2 frente al Milan en una final apasionante que muchos no olvidan.";
 	
-	anecdotas[2]="MR soceer: El premio se lo llevo Zinedine Zidane con una gran actuacion en el mundial 2006 a pesar de perder aquella final contra Italia y protagonizar un hecho de violencia a su rival Materazzi que esto lo llevo a la expulsion.\nA pesar de esto se pudo llevar el premio al mejor jugador del mundial.";
+	anecdotas[2]=">> MR soceer: El premio se lo llevo Zinedine Zidane con una gran actuacion en el mundial 2006 a pesar de perder aquella final contra Italia y protagonizar un hecho de violencia a su rival Materazzi que esto lo llevo a la expulsion.\nA pesar de esto se pudo llevar el premio al mejor jugador del mundial.";
 	
-	anecdotas[3]="MR soceer: Fue el Manchester United quien consiguio su 19 Premier League con un total de 80 puntos y con una ventaja de 9 puntos sobre el segundo puesto que era el Chelsea.";
+	anecdotas[3]=">> MR soceer: Fue el Manchester United quien consiguio su 19 Premier League con un total de 80 puntos y con una ventaja de 9 puntos sobre el segundo puesto que era el Chelsea.";
 	
-	anecdotas[4]="MR soceer: El Benfica fue el subcampeon de aquella edicion de la Uefa Europa league tras empatar 0-0 la final se resolvio en penales como resultado 4-2 dando como consecuencia el triunfo del cuadro sevillista";
+	anecdotas[4]=">> MR soceer: El Benfica fue el subcampeon de aquella edicion de la Uefa Europa league tras empatar 0-0 la final se resolvio en penales como resultado 4-2 dando como consecuencia el triunfo del cuadro sevillista";
 	
-	anecdotas[5]="MR soceer: Es Lionel Andres Messi el astro argentino lleva 31 goles, 3 goles por encima de Luis Suarez.";
+	anecdotas[5]=">> MR soceer: Es Lionel Andres Messi el astro argentino lleva 31 goles, 3 goles por encima de Luis Suarez.";
 	
-	anecdotas[6]="MR soceer: Fue Fernando Torres con 3 goles y 1 asistencia. Y por haber jugado el menor tiempo que el resto de goleadores de aquel torneo.";
+	anecdotas[6]=">> MR soceer: Fue Fernando Torres con 3 goles y 1 asistencia. Y por haber jugado el menor tiempo que el resto de goleadores de aquel torneo.";
 	
-	anecdotas[7]="MR soceer: Nicolla Rizzoli (italiano)fue el encargado de dirigir aquella final del mundial 2014 en la cual se enfrentaron Alemania y Argentina";
+	anecdotas[7]=">> MR soceer: Nicolla Rizzoli (italiano)fue el encargado de dirigir aquella final del mundial 2014 en la cual se enfrentaron Alemania y Argentina";
 	
-	anecdotas[8]="MR soceer: El premio se lo llevo el croata Luka Modric con una gran actuacion en el mundial 2018 al llegar a la final con su seleccion.\nTambien ganando diferentes titulos con su club Real Madrid entre ellos la Champions League";
+	anecdotas[8]=">> MR soceer: El premio se lo llevo el croata Luka Modric con una gran actuacion en el mundial 2018 al llegar a la final con su seleccion.\nTambien ganando diferentes titulos con su club Real Madrid entre ellos la Champions League";
 	
-	anecdotas[9]="MR soceer: Juan Roman Riquelme fue elegido como el mejor jugador de la libertadores del 2007 con 8 goles y 7 asistencias.\nAdemas de ser el mejor jugador de los dos partidos de la final de aquella edicion";
+	anecdotas[9]=">> MR soceer: Juan Roman Riquelme fue elegido como el mejor jugador de la libertadores del 2007 con 8 goles y 7 asistencias.\nAdemas de ser el mejor jugador de los dos partidos de la final de aquella edicion";
 
 }
 
@@ -422,12 +422,12 @@ int main(){
 	
 	do{
 		
-	cout<<"LA TRIVIA FUTBOLERA"<<endl<<endl;//bienvenida
+	cout<<"#------LA TRIVIA FUTBOLERA------#"<<endl<<endl;//bienvenida
 	
 	dinamica();//Explicacion del juego
 	
 	
-	cout<<"Introduzca los jugadores a jugar max.2"<<endl; //seleccion de jugadores
+	cout<<"> Introduzca los jugadores a jugar max.2"<<endl; //seleccion de jugadores
 	cin>>c;
 	
 	/*
@@ -444,7 +444,7 @@ int main(){
 	*/
 
 	if(c==1){//Objectos del jugador 1
-		cout<<"elegiste 1 jugador"<<endl;
+		cout<<">> Elegiste 1 jugador"<<endl;
 		
 		Usuario jugador1= Usuario("Jugador1",0);
 		jugador1.nombre_usuario();
@@ -528,24 +528,24 @@ int main(){
 
 //Explicacion del juego
 void dinamica(){
-	cout<<"Mr Soccer:Hola Jugador Bienvenido a este increible juego,soy la mascota, mi nombre es Mr. Soccer,un placer conocerte."<<endl;
-	cout<<"Tal vez te estas prenguntando como es la dinamica de este juego, bueno sin mas preambulos."<<endl<<endl;
-	cout<<"La dinamica del juego es la siguiente:"<<endl;
-	cout<<"-El juego consiste en 10 preguntas"<<endl;
-	cout<<"-Responde las preguntas correctamente para ganar el mayor puntaje posible"<<endl;
-	cout<<"Si seleccionas 2 jugadores, no dejes qeu tu contricante vea tus preguntas ya que despues de que termines las 10 preguntas estas seran las mismas para el juegador 2"<<endl;
-	cout<<"-Si respondes incorrectamente no ganaras puntos ."<<endl<<endl;
-	cout<<"Mr soccer: Estare en la parte de anecdotas para contarte de los sucesos de la historia del futbol.Que te parece si damos inicio."<<endl<<endl;
 	
+	cout<<"#-------------------------------#"<<endl<<endl<<">> Mr Soccer:Hola Jugador Bienvenido a este increible juego,soy la mascota, mi nombre es Mr. Soccer,un placer conocerte."<<endl<<endl;
+	cout<<">> Esta es la dinamica del juego: "<<endl;
+	cout<<"- El juego consiste en 10 preguntas."<<endl;
+	cout<<"- Responde las preguntas correctamente para ganar el mayor puntaje posible."<<endl;
+	cout<<"- Si seleccionas 2 jugadores, no dejes qeu tu contricante vea tus preguntas ya que despues de que termines las 10 preguntas estas seran las mismas para el juegador 2."<<endl;
+	cout<<"- Si respondes incorrectamente no ganaras puntos."<<endl<<endl;
+	cout<<">> Mr soccer: Estare en la parte de anecdotas para contarte de los sucesos de la historia del futbol."<<endl<<endl;
+	cout<<"#------INICIO DEL JUEGO------#"<<endl<<endl;
 }
 // Palabras finales y creditos	
 void final(){
 	
-	cout<<"Mr soccer: Que triste que haya terminado el juego pero gracias por jugar a la trivia futbolera,nos vemos en una proxima ocasion."<<endl<<endl; 
-	cout <<"Creditos"<<endl;
-	cout<<"Creador: Jose Miguel Ramirez"<<endl<<endl;
-	cout<<"Anecdota: Gracias por disfutar del juego que he hecho es el primero que hago y me diverti mucho en este proyecto, sigan aprendiendo de este lindo mundo de la programacion ."<<endl;
-	cout<<"-Y no olviden que el mejor jugador del mundo es Messi"<<endl<<endl<<"Mr soccer: Te equivocas es el bicho(CR7) siuuuuu."<<endl;
+	cout<<">> Mr soccer: Que triste que haya terminado el juego pero gracias por jugar a la trivia futbolera,nos vemos en una proxima ocasion."<<endl<<endl; 
+	cout <<"#------Creditos------#"<<endl;
+	cout<<"Creador: *Jose Miguel Ramirez* "<<endl<<endl;
+	cout<<">> Anecdota: Gracias por disfutar del juego que he hecho es el primero que hago y me diverti mucho en este proyecto, sigan aprendiendo de este lindo mundo de la programacion ."<<endl;
+	cout<<"- Y no olviden que el mejor jugador del mundo es Messi"<<endl<<endl<<">> Mr soccer: Te equivocas es el bicho(CR7) siuuuuu."<<endl;
 }	
 
 
