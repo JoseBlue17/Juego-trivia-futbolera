@@ -422,7 +422,15 @@ int main(){
 	
 	do{
 		
-	cout<<"#------LA TRIVIA FUTBOLERA------#"<<endl<<endl;//bienvenida
+	cout<<"#-------LA TRIVIA FUTBOLERA-------#"<<endl<<endl;//bienvenida
+	
+
+  cout << "                        ____   " << endl;  
+  cout << "     o__        o__     |   |\\" << endl;
+  cout << "    /|          /\\      |   |X\\" << endl;
+  cout << "    / > o        <\\     |   |XX\\" << endl<<endl;
+
+			
 	
 	dinamica();//Explicacion del juego
 	
@@ -529,7 +537,7 @@ int main(){
 //Explicacion del juego
 void dinamica(){
 	
-	cout<<"#-------------------------------#"<<endl<<endl<<">> Mr Soccer:Hola Jugador Bienvenido a este increible juego,soy la mascota, mi nombre es Mr. Soccer,un placer conocerte."<<endl<<endl;
+	cout<<"#---------------------------------#"<<endl<<endl<<">> Mr Soccer:Hola Jugador Bienvenido a este increible juego,soy la mascota, mi nombre es Mr. Soccer,un placer conocerte."<<endl<<endl;
 	cout<<">> Esta es la dinamica del juego: "<<endl;
 	cout<<"- El juego consiste en 10 preguntas."<<endl;
 	cout<<"- Responde las preguntas correctamente para ganar el mayor puntaje posible."<<endl;
