@@ -10,7 +10,7 @@
 
 
 #include<iostream>
-#include<conio.h>
+//#include<conio.h>
 /**
 ·*·@brief· Punto·de·inicio·del·programa.
 ·*·
