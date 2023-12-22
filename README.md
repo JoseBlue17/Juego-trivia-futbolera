@@ -1,13 +1,8 @@
 
 <div align="center">
    <img src="https://th.bing.com/th/id/OIG._Jq5OqyY3MnOG3EZBmT3?pid=ImgGn"   width= 300 height=300 >
-
 </div>
  
-
-
-
-
 # Trivia Futbolera
 Trivia futbolera es un juego de preguntas en donde pondra a prueba tus conocimientos futbolisticos, claro no se necesita ser experto en el tema todos pueden disfrutar del juego
 y te divertiras con la mascota Mr soccer, que esperas para jugarlo?
