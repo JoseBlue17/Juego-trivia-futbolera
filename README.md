@@ -1,6 +1,6 @@
 
 <div align="center">
-   <img src="https://th.bing.com/th/id/OIG._Jq5OqyY3MnOG3EZBmT3?pid=ImgGn"   width= 300 height=300 >
+   <img src="https://i.ibb.co/gzf1W5N/f8e4fe9b-ca92-4926-882c-1a34fb5e1144-1.jpg"   width= 300 height=300 >
 </div>
  
 # Trivia Futbolera
