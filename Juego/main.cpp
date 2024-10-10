@@ -454,7 +454,7 @@ int main(){
 	if(c==1){//Objectos del jugador 1
 		cout<<">> Elegiste 1 jugador"<<endl;
 		
-		Usuario jugador1= Usuario("Jugador1",0);
+		Usuario jugador1= Usuario(c,0);
 		jugador1.nombre_usuario();
 		
 		
