@@ -5,7 +5,7 @@ FROM gcc:latest
 WORKDIR /app
 
 # Copiar todos los archivos del proyecto al directorio de trabajo
-COPY . /juego/Dockerfile
+COPY ./juego /app
 
 # Compilar el proyecto
 RUN g++ -o myapp main.cpp
