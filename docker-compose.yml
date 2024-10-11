@@ -3,7 +3,7 @@ services:
   myapp:
     build:
       context: .
-      dockerfile: ./juego/Dockerfile
+      dockerfile: Dockerfile
     ports:
       - "8080:8080"
     volumes:
