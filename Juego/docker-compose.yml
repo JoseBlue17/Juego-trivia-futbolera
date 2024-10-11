@@ -1,0 +1,10 @@
+version: '3'
+services:
+  myapp:
+    build:
+      context: .
+      dockerfile: ./juego/Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
