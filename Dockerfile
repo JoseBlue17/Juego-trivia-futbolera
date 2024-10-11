@@ -7,7 +7,10 @@ WORKDIR /opt/render/project/src
 COPY . .
 
 # Verificar que la carpeta 'juego' fue copiada correctamente
-RUN ls -la && ls -la ./juego
+RUN ls -la 
+
+# Verificar que la carpeta 'juego' fue copiada correctamente
+RUN ls -la ./juego
 
 # Compilar el archivo main.cpp
 RUN g++ -o juego ./juego/main.cpp -std=c++11
