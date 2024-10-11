@@ -4,3 +4,5 @@ services:
     env: docker
     dockerfilePath: ./Dockerfile
     buildCommand: docker build -t mi-juego-cpp .
+    startCommand: ./Juego
+  
