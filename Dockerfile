@@ -4,7 +4,7 @@ FROM gcc:latest
 WORKDIR /opt/render/project/src
 
 # Copiar específicamente la carpeta 'juego' desde el host al contenedor
-COPY ./juego ./juego
+COPY . .
 
 # Verificar que la carpeta 'juego' fue copiada correctamente
 RUN ls -la && ls -la ./juego
