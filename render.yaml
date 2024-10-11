@@ -5,4 +5,6 @@ services:
     dockerfilePath: ./Dockerfile
     buildCommand: docker build -t mi-juego-cpp .
     startCommand: ./Juego
-  
+    envVars:
+      - key: PORT
+        value: 8080

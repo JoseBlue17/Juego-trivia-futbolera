@@ -18,5 +18,8 @@ RUN g++ -o juego ./Juego/main.cpp -std=c++11
 # Asegurarse de que el ejecutable tiene permisos de ejecución
 RUN chmod +x juego
 
+# Exponer el puerto 8080
+EXPOSE 8080
+
 # Comando para ejecutar el programa
 CMD ["./juego"]
