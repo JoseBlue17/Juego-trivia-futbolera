@@ -495,7 +495,7 @@ int main() {
 
         if (respuesta == "N" || respuesta == "n") {
             cout << "Adiós, vuelva pronto" << endl;
-             this_thread::sleep_for(chrono::hours(1));
+            
 			break; // Esto asegura que el bucle se termine
 			
         }
