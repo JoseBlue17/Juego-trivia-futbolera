@@ -10,7 +10,7 @@ COPY . .
 RUN ls -la
 
 # Compilar el archivo main.cpp
-RUN g++ -o juego ./subdirectorio/main.cpp -std=c++11
+RUN g++ -o juego ./juego/main.cpp -std=c++11
 
 # Asegurarse de que el ejecutable tiene permisos de ejecución
 RUN chmod +x juego
