@@ -1,17 +1,20 @@
-# Usar una imagen base de GCC para compilar el proyecto
+# Usa la imagen base de GCC
 FROM gcc:latest
 
-# Crear un directorio de trabajo dentro del contenedor
-WORKDIR  /opt/render/project/src
+# Crea un directorio de trabajo en el contenedor
+WORKDIR /app
 
-# Copiar todos los archivos del proyecto al directorio de trabajo
-COPY . .
+# Copia todos los archivos desde el directorio actual (juego) al directorio de trabajo
+COPY . /app
 
-# Compilar el proyecto
-RUN g++ -o juego main.cpp -std=c++11
+# Lista el contenido del directorio para verificar que los archivos fueron copiados
+RUN ls -l /app
 
-# Asegurarse de que el ejecutable tiene permisos de ejecución
-RUN chmod +x juego
+# Compila el archivo main.cpp usando la ruta correcta
+RUN g++ -o juego /app/main.cpp -std=c++11
 
-# Comando que ejecutará la aplicación cuando se inicie el contenedor
+# Asegúrate de que el ejecutable tiene permisos de ejecución
+RUN chmod +x /app/juego
+
+# Comando para ejecutar el programa al iniciar el contenedor
 CMD ["./juego"]
