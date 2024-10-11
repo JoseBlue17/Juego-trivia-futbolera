@@ -428,135 +428,73 @@ void Juego::historia(){//HISTORIA O ANECDOTAS
 ·*·@brief Se·crean·los·objectos·jugador1·de·la·clase·Usuario·y·el·objecto·j1·de·la·clase·Juego·del·mismo·modo·para·con·el·objecto·de·jugador2· 
 
 */
-int main(){
-		int c;
-		char respuesta;
-	
-	do{
-		
-	cout<<"#-------LA TRIVIA FUTBOLERA-------#"<<endl<<endl;//bienvenida
-	
+#include <iostream>
+#include <string>
 
-  cout << "                        ____   " << endl;  
-  cout << "     o__        o__     |   |\\" << endl;
-  cout << "    /|          /\\      |   |X\\" << endl;
-  cout << "    / > o        <\\     |   |XX\\" << endl<<endl;
+using namespace std;
 
-			
-	
-	dinamica();//Explicacion del juego
-	
-	
-	cout<<"> Introduzca los jugadores a jugar max.2"<<endl; //seleccion de jugadores
-	cin>>c;
-	
-	/*
-	@brief Se·crea·una·desicion·para·que·el·usuario·pueda·seleccionar·cuantas·personas·jugaran,*
-	*y·esta·incluye·el·nombre,preguntas,puntajes· 
-	·*·
-	·*·
-	@param·c==1·seleccionar·1·solo·jugador·
-	@param·c==2·seleccionar·2·dos·jugadores·
-	·*·
-	·*·
-	@return·0·finaliza·el·programa·
+int main() {
+    string respuesta;
 
-	*/
+    do {
+        cout << "> Introduzca los jugadores a jugar max.2" << endl; // selección de jugadores
+        int c;
+        cin >> c;
 
-	if(c==1){//Objectos del jugador 1
-		cout<<">> Elegiste 1 jugador"<<endl;
-		
-		Usuario jugador1= Usuario(c,0);
-		jugador1.nombre_usuario();
-		
-		
-		Juego j1=Juego("Prenguntas");
-		jugador1.getPuntaje();
-		j1.preguntas_responder(jugador1);
-		
-		cout<<"\n";
-		cout << "Puntaje total: "<< jugador1.getPuntaje()<< endl;
+        if (c == 1) { // Objetos del jugador 1
+            cout << ">> Elegiste 1 jugador" << endl;
 
-		   // Añadir pausa aquí
-        cout << "Desea continuar? (S/N): ";
-        string response;
-        cin >> response;
+            Usuario jugador1 = Usuario(c, 0);
+            jugador1.nombre_usuario();
 
-        if (response == "N" || response == "n") {
-            cout << "Adiós, vuelva pronto" << endl;
-            return 0;
+            Juego j1 = Juego("Preguntas");
+            jugador1.getPuntaje();
+            j1.preguntas_responder(jugador1);
+
+            cout << "\n";
+            cout << "Puntaje total: " << jugador1.getPuntaje() << endl;
+
+        } else if (c == 2) { // Objetos del jugador 2
+            cout << "elegiste 2 jugadores" << endl;
+
+            Usuario jugador1 = Usuario("Jugador1", 0); // Objetos para el jugador 1
+            jugador1.nombre_usuario();
+
+            Juego j1 = Juego("Preguntas"); // Objetos preguntas y anécdotas
+            jugador1.getPuntaje();
+            j1.preguntas_responder(jugador1);
+
+            Usuario jugador2 = Usuario("jugador2", 0); // Objetos para el jugador 2
+            jugador2.nombre_usuario();
+
+            Juego juego2 = Juego("Preguntas"); // Objetos preguntas y anécdotas para el jugador 2
+            cout << "Mr Soccer, Ahora es turno del jugador 2" << endl;
+            juego2.preguntas_responder(jugador2);
+
+            cout << "\n";
+            // Puntaje de los dos jugadores
+            cout << "Puntaje total Jugador 1: " << jugador1.getPuntaje() << endl;
+            cout << "Puntaje Jugador 2: " << jugador2.getPuntaje() << endl;
+
+            // Decisión de quién ganó la partida o si hubo empate
+            if (jugador1.getPuntaje() > jugador2.getPuntaje()) {
+                cout << "Jugador 1  ganador de la partida" << endl;
+            } else if (jugador2.getPuntaje() > jugador1.getPuntaje()) {
+                cout << "jugador 2 ganó la partida" << endl;
+            } else {
+                cout << "Empate, bien jugado" << endl;
+            }
         }
-    }
-		
-				
-	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*	
 
-	}
-	else if(c==2){//Objectos del jugador 2
-		cout<<"elegiste 2 jugadores"<<endl;
-		
-		Usuario jugador1= Usuario("Jugador1",0);//Objectos para el jugador 1
-		jugador1.nombre_usuario();
-		
-		Juego j1=Juego("Prenguntas" );//Objectos preguntas y anecdotas
-		jugador1.getPuntaje();
-		j1.preguntas_responder(jugador1);
-			
-			
-		Usuario jugador2= Usuario("jugador2",0);//Objectos para el jugador 1
-		jugador2.nombre_usuario();
-		
-		
-		Juego juego2=Juego("Prenguntas" );//Objectos preguntas y anecdotas para el jugador 2
-		cout<<"Mr Soccer, Ahora esturno del jugador 2"<<endl;
-		juego2.preguntas_responder(jugador2);
-			
-		cout<<"\n";
-		//Puntaje de los dos jugadores
-		cout << "Puntaje total Jugador 1: " << jugador1.getPuntaje()<< endl;
-		cout << "Puntaje Jugador 2: " << jugador2.getPuntaje() << endl;
+        final(); // Palabras finales de Mr Soccer (mascota)
 
-	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*	
-	cin.get();
-	//system("pause");
-	//Desicion de quien gano la partida o si hubo empate
-	
-	if(jugador1.getPuntaje()>jugador2.getPuntaje()){
-			cout<<"Jugador 1  ganador de la partida"<<endl;
-		}
-		else if(jugador2.getPuntaje()>jugador1.getPuntaje()){
-			cout<<"jugador2 gano la partida"<<endl;
-		}	
-	else {
-		cout<<"Empate,bien jugado"<<endl;
-		
-	}}
-	cin.get();
-	//system("pause");
-	
-	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*
-	
-	//system("cls");
-	final();//Palabras finales de Mr Soccer(mascota)
-		
-		
-	cout << "\nDesea continuar? (S/N)";// Si desea reiniciar o finalizar el programa
-    cin >> respuesta;
-    
-    if(respuesta == 'S' || respuesta == 's') {
-      cout << "Continuando el programa"<<"\n"; 
-      
-    }
-    else if(respuesta == 'N' || respuesta == 'n') {
-      cout << "Adios, vuelva pronto"; 
-    }
-    else {
-      cout << "Respuesta invalida. Intente de nuevo."<<"\n"; 
-    }
-    }while(respuesta == 'S' || respuesta == 's');
+        cout << "\nDesea continuar? (S/N): "; // Si desea reiniciar o finalizar el programa
+        cin >> respuesta;
 
-		
-	return 0;
+    } while (respuesta == "S" || respuesta == "s");
+
+    cout << "Adiós, vuelva pronto" << endl;
+    return 0;
 }
 
 //Explicacion del juego
