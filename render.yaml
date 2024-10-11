@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: mi-juego-cpp
+    env: docker
+    dockerfilePath: ./Dockerfile
+    buildCommand: docker build -t mi-juego-cpp .
