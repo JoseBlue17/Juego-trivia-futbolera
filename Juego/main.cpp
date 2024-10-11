@@ -10,6 +10,8 @@
 
 
 #include<iostream>
+#include <string>
+#include <cstdlib>
 //#include<conio.h>
 /**
 ·*·@brief· Punto·de·inicio·del·programa.
@@ -34,6 +36,7 @@ class Usuario{
 	
 	public://Metodos
 		Usuario(string,int);//Constructor
+		Usuario(int,int);
 		void nombre_usuario();
 		void puntajes(int);
 		int getPuntaje() const;
@@ -45,15 +48,15 @@ Usuario::Usuario(string elNombre,int elPuntaje){
 	puntaje=elPuntaje;
 	
 }
+Usuario::Usuario(int id, int elPuntaje) {
+    nombre = "Jugador" + to_string(id);
+    puntaje = elPuntaje;
+}
 //Se·inicializa·el·constructor·para·el·nombre·del·usuario·
 void Usuario::nombre_usuario(){
-	system("cls");
-	
-	
+		system("cls");
 	cout<<"Soy: "<<nombre<<endl;
 
-
-	
 }
 //Se·inicializa·el·constructor·para·el·puntaje·
 void Usuario::puntajes(int puntos){//Puntaje
