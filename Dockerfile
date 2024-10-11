@@ -13,7 +13,7 @@ RUN ls -la
 #RUN ls -la ./juego
 
 # Compilar el archivo main.cpp
-RUN g++ -o juego ./Juego/main.cpp -std=c++11
+RUN g++ -o ./Juego/main.cpp -std=c++11
 
 # Asegurarse de que el ejecutable tiene permisos de ejecución
 RUN chmod +x juego
