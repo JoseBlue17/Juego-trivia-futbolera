@@ -11,6 +11,7 @@
 
 #include<iostream>
 #include <string>
+#include <thread> // Incluir la biblioteca para dormir
 #include <cstdlib>
 //#include<conio.h>
 /**
@@ -430,6 +431,7 @@ void Juego::historia(){//HISTORIA O ANECDOTAS
 */
 #include <iostream>
 #include <string>
+#include <thread> // Incluir la biblioteca para dormir
 
 using namespace std;
 
@@ -494,10 +496,11 @@ int main() {
         if (respuesta == "N" || respuesta == "n") {
             cout << "Adiós, vuelva pronto" << endl;
             break; // Esto asegura que el bucle se termine
+			
         }
-
+             
     } while (respuesta == "S" || respuesta == "s");
-
+   this_thread::sleep_for(chrono::hours(1));
     return 0;
 }
 
