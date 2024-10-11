@@ -496,12 +496,12 @@ int main() {
         if (respuesta == "N" || respuesta == "n") {
             cout << "Adiós, vuelva pronto" << endl;
             
-			break; // Esto asegura que el bucle se termine
+			return 0;// Esto asegura que el bucle se termine
 			
         }
              
     } while (respuesta == "S" || respuesta == "s");
-  
+  cout<<"El bucle ha terminado. Finalizando programa." << endl;
     return 0;
 }
 
