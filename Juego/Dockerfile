@@ -5,7 +5,7 @@ FROM gcc:latest
 WORKDIR /app
 
 # Copiar los archivos de la subcarpeta 'juego' al directorio de trabajo
-COPY ./juego /app
+COPY ../juego /app
 
 # Compilar el proyecto
 RUN g++ -o juego /app/main.cpp -std=c++11 -v
