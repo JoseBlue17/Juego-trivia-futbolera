@@ -10,7 +10,7 @@ COPY . .
 RUN ls -la 
 
 # Verificar que la carpeta 'juego' fue copiada correctamente
-RUN ls -la ./juego
+RUN ls -la ./Juego
 
 # Compilar el archivo main.cpp
 RUN g++ -o juego ./Juego/main.cpp -std=c++11
