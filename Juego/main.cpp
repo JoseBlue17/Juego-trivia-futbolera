@@ -476,6 +476,17 @@ int main(){
 		
 		cout<<"\n";
 		cout << "Puntaje total: "<< jugador1.getPuntaje()<< endl;
+
+		   // Añadir pausa aquí
+        cout << "Desea continuar? (S/N): ";
+        string response;
+        cin >> response;
+
+        if (response == "N" || response == "n") {
+            cout << "Adiós, vuelva pronto" << endl;
+            return 0;
+        }
+    }
 		
 				
 	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*	
@@ -506,7 +517,8 @@ int main(){
 		cout << "Puntaje Jugador 2: " << jugador2.getPuntaje() << endl;
 
 	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*	
-	system("pause");
+	cin.get();
+	//system("pause");
 	//Desicion de quien gano la partida o si hubo empate
 	
 	if(jugador1.getPuntaje()>jugador2.getPuntaje()){
@@ -519,7 +531,8 @@ int main(){
 		cout<<"Empate,bien jugado"<<endl;
 		
 	}}
-	system("pause");
+	cin.get();
+	//system("pause");
 	
 	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*
 	
