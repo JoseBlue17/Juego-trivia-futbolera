@@ -495,9 +495,8 @@ int main() {
 
         if (respuesta == "N" || respuesta == "n") {
             cout << "Adiós, vuelva pronto" << endl;
-            
-			return 0;// Esto asegura que el bucle se termine
-			
+            break;
+					
         }
              
     } while (respuesta == "S" || respuesta == "s");
