@@ -8,7 +8,7 @@ WORKDIR  /opt/render/project/src
 COPY . .
 
 # Compilar el proyecto
-RUN g++ -o myapp main.cpp
+RUN g++ -o juego main.cpp -std=c++11
 
 # Asegurarse de que el ejecutable tiene permisos de ejecución
 RUN chmod +x juego
