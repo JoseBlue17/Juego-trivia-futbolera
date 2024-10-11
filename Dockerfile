@@ -3,14 +3,11 @@ FROM gcc:latest
 # Crear un directorio de trabajo en el contenedor
 WORKDIR /opt/render/project/src
 
-# Copiar el contenido de la carpeta de trabajo
-COPY . .
+# Copiar específicamente la carpeta 'juego' desde el host al contenedor
+COPY ./juego ./juego
 
-# Listar el contenido del directorio de trabajo
-RUN ls -la
-
-# Listar el contenido de la carpeta juego para verificar que main.cpp existe
-RUN ls -la ./juego
+# Verificar que la carpeta 'juego' fue copiada correctamente
+RUN ls -la && ls -la ./juego
 
 # Compilar el archivo main.cpp
 RUN g++ -o juego ./juego/main.cpp -std=c++11
