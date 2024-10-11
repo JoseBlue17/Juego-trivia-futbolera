@@ -491,9 +491,13 @@ int main() {
         cout << "\nDesea continuar? (S/N): "; // Si desea reiniciar o finalizar el programa
         cin >> respuesta;
 
+        if (respuesta == "N" || respuesta == "n") {
+            cout << "Adiós, vuelva pronto" << endl;
+            break; // Esto asegura que el bucle se termine
+        }
+
     } while (respuesta == "S" || respuesta == "s");
 
-    cout << "Adiós, vuelva pronto" << endl;
     return 0;
 }
 
