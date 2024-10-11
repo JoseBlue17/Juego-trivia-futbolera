@@ -54,7 +54,7 @@ Usuario::Usuario(int id, int elPuntaje) {
 }
 //Se·inicializa·el·constructor·para·el·nombre·del·usuario·
 void Usuario::nombre_usuario(){
-		system("cls");
+	//	system("cls");
 	cout<<"Soy: "<<nombre<<endl;
 
 }
@@ -129,8 +129,9 @@ void Juego::preguntas_responder(Usuario &jugador){
 		
 		
 	}
-	system("pause");
-	system("cls");//Limpiando la consola
+	cin.get();
+	//system("pause");
+	//system("cls");//Limpiando la consola
 
 //-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*	
 	posicion++;//Pregunta#2
@@ -159,8 +160,9 @@ void Juego::preguntas_responder(Usuario &jugador){
 		cout<<"Respuesta incorrecta (;_;). Es la opcion C"<<endl<<"\n";;
 		cout<<anecdotas[1]<<endl<<"\n";;
 	}
-	system("pause");
-	system("cls");
+	cin.get();
+	//system("pause");
+	//system("cls");
 	
 	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*
 	
@@ -186,8 +188,9 @@ void Juego::preguntas_responder(Usuario &jugador){
 		cout<<"Respuesta incorrecta (;_;).Es la opcion C"<<endl<<"\n";;
 		cout<<anecdotas[2]<<endl<<"\n";;
 	}
-	system("pause");
-	system("cls");
+	cin.get();
+	//system("pause");
+	//system("cls");
 	
 	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*
 	
@@ -215,8 +218,9 @@ void Juego::preguntas_responder(Usuario &jugador){
 		cout<<anecdotas[3]<<endl<<"\n";
 		
 	}
-	system("pause");
-	system("cls");
+	cin.get();
+	//system("pause");
+	//system("cls");
 	
 	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*
 	
@@ -244,8 +248,9 @@ void Juego::preguntas_responder(Usuario &jugador){
 		cout<<anecdotas[4]<<endl<<"\n";
 				
 	}
-	system("pause");
-	system("cls");
+	cin.get();
+	//system("pause");
+	//system("cls");
 	
 	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*
 	
@@ -272,8 +277,9 @@ void Juego::preguntas_responder(Usuario &jugador){
 		cout<<"Respuesta incorrecta (;_;). Es la opcion B"<<endl<<"\n";
 		cout<<anecdotas[5]<<endl<<"\n";
 	}
-	system("pause");
-	system("cls");
+	cin.get();
+	//system("pause");
+	//system("cls");
 	
 	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*
 	
@@ -299,8 +305,9 @@ void Juego::preguntas_responder(Usuario &jugador){
 		cout<<"Respuesta incorrecta (;_;). Es la opcion D"<<endl<<"\n";
 		cout<<anecdotas[6]<<endl<<"\n";
 	}
-	system("pause");
-	system("cls");
+	cin.get();
+	//system("pause");
+	//system("cls");
 	
 	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*
 	
@@ -326,8 +333,9 @@ void Juego::preguntas_responder(Usuario &jugador){
 		cout<<anecdotas[7]<<endl<<"\n";
 		
 	}
-	system("pause");
-	system("cls");
+	cin.get();
+	//system("pause");
+	//system("cls");
 	
 	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*
 	
@@ -353,8 +361,9 @@ void Juego::preguntas_responder(Usuario &jugador){
 		cout<<anecdotas[8]<<endl<<"\n";
 		
 	}
-	system("pause");
-	system("cls");
+	cin.get();
+	//system("pause");
+	//system("cls");
 	
 	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*
 	
@@ -379,8 +388,8 @@ void Juego::preguntas_responder(Usuario &jugador){
 		cout<<"Respuesta incorrecta (;_;).Es la opcion B"<<endl;
 		cout<<anecdotas[9]<<endl<<"\n";
 	}
-		
-	system("pause");
+	cin.get();
+	//system("pause");
 }
 
 /*
@@ -514,7 +523,7 @@ int main(){
 	
 	//-----------------*---------------------*------------------------*--------------------------*-------------------------*---------------------------*
 	
-	system("cls");
+	//system("cls");
 	final();//Palabras finales de Mr Soccer(mascota)
 		
 		
