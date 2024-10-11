@@ -495,12 +495,13 @@ int main() {
 
         if (respuesta == "N" || respuesta == "n") {
             cout << "Adiós, vuelva pronto" << endl;
-            break; // Esto asegura que el bucle se termine
+             this_thread::sleep_for(chrono::hours(1));
+			break; // Esto asegura que el bucle se termine
 			
         }
              
     } while (respuesta == "S" || respuesta == "s");
-   this_thread::sleep_for(chrono::hours(1));
+  
     return 0;
 }
 
