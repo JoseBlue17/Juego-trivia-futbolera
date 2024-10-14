@@ -1,0 +1,25 @@
+name: C++ Build and Run
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Docker
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker.io
+
+      - name: Build Docker image
+        run: docker build -t trivia-futbolera .
+
+      - name: Run Docker container
+        run: docker run trivia-futbolera
